@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTVideoAddTextViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="UOr-W2-pBc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxV-rk-m7O">
+                    <rect key="frame" x="169" y="603" width="37" height="34"/>
+                    <state key="normal" title="剪切">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="capVideo:" destination="-1" eventType="touchUpInside" id="DiZ-8U-yAr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kko-ME-qsc">
+                    <rect key="frame" x="150.5" y="540" width="74" height="34"/>
+                    <state key="normal" title="背景音乐">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addBGAudio:" destination="-1" eventType="touchUpInside" id="GAd-VJ-kaY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iav-m8-6ko">
+                    <rect key="frame" x="151" y="491" width="74" height="34"/>
+                    <state key="normal" title="倒放保存">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="daofangbaocun:" destination="-1" eventType="touchUpInside" id="ap1-ts-C4w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BxV-rk-m7O" firstAttribute="top" secondItem="Kko-ME-qsc" secondAttribute="bottom" constant="29" id="4Gi-px-XSx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BxV-rk-m7O" secondAttribute="bottom" constant="30" id="Bld-j0-3M5"/>
+                <constraint firstItem="Kko-ME-qsc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JVM-jg-LEh"/>
+                <constraint firstItem="BxV-rk-m7O" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Lxt-oZ-dBI"/>
+                <constraint firstItem="BxV-rk-m7O" firstAttribute="centerX" secondItem="iav-m8-6ko" secondAttribute="centerX" id="dVA-Fv-g7M"/>
+                <constraint firstItem="Kko-ME-qsc" firstAttribute="top" secondItem="iav-m8-6ko" secondAttribute="bottom" constant="15" id="x2d-tQ-kId"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
