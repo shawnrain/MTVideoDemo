@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTFeebackViewController">
+            <connections>
+                <outlet property="cancelBtn" destination="UOG-Gf-hMC" id="8V3-OA-eCk"/>
+                <outlet property="containtView" destination="HvS-hd-VgA" id="mPX-2e-oFQ"/>
+                <outlet property="lTextView" destination="Nkv-qu-gVM" id="P5l-ce-x5h"/>
+                <outlet property="ltextField" destination="ux8-zS-Ifg" id="X0H-4t-zVP"/>
+                <outlet property="subMitBtn" destination="XyM-MS-Bwd" id="brG-V1-5p9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvS-hd-VgA">
+                    <rect key="frame" x="15" y="39" width="345" height="382"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nkv-qu-gVM">
+                            <rect key="frame" x="10" y="10" width="325" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="pre-4b-Wqc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写手机号或微信号，我们及时通知您" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ux8-zS-Ifg" customClass="SPTextField">
+                            <rect key="frame" x="10" y="258" width="325" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.95294117647058818" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="lfS-Ki-d5U"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw2-or-1No">
+                            <rect key="frame" x="10" y="227" width="71.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="YBy-xk-6wb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyM-MS-Bwd">
+                            <rect key="frame" x="10" y="328" width="120" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="6MB-sn-ieI"/>
+                                <constraint firstAttribute="height" constant="38" id="fDs-x6-HlH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="subMitBtnSelected:" destination="-1" eventType="touchUpInside" id="DYE-mX-vki"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-Gf-hMC">
+                            <rect key="frame" x="215" y="328" width="120" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="5DX-ym-9ER"/>
+                                <constraint firstAttribute="height" constant="38" id="Byg-1W-3j0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnSelected:" destination="-1" eventType="touchUpInside" id="Rfb-IK-sCa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Tw2-or-1No" firstAttribute="leading" secondItem="Nkv-qu-gVM" secondAttribute="leading" id="3A7-qc-zSa"/>
+                        <constraint firstItem="ux8-zS-Ifg" firstAttribute="leading" secondItem="Tw2-or-1No" secondAttribute="leading" id="5Ga-G7-y6A"/>
+                        <constraint firstAttribute="trailing" secondItem="ux8-zS-Ifg" secondAttribute="trailing" constant="10" id="9PL-5G-ejL"/>
+                        <constraint firstItem="UOG-Gf-hMC" firstAttribute="centerY" secondItem="XyM-MS-Bwd" secondAttribute="centerY" id="Dqe-Rv-ekW"/>
+                        <constraint firstItem="UOG-Gf-hMC" firstAttribute="trailing" secondItem="ux8-zS-Ifg" secondAttribute="trailing" id="IGV-8o-C59"/>
+                        <constraint firstAttribute="height" constant="382" id="IhT-Xs-qpc"/>
+                        <constraint firstItem="Nkv-qu-gVM" firstAttribute="top" secondItem="HvS-hd-VgA" secondAttribute="top" constant="10" id="RC9-vE-J1T"/>
+                        <constraint firstItem="ux8-zS-Ifg" firstAttribute="top" secondItem="Tw2-or-1No" secondAttribute="bottom" constant="10" id="S4L-4J-qRT"/>
+                        <constraint firstItem="Tw2-or-1No" firstAttribute="top" secondItem="Nkv-qu-gVM" secondAttribute="bottom" constant="17" id="SDY-Rf-NVB"/>
+                        <constraint firstItem="XyM-MS-Bwd" firstAttribute="leading" secondItem="ux8-zS-Ifg" secondAttribute="leading" id="YLA-HO-2UV"/>
+                        <constraint firstItem="Nkv-qu-gVM" firstAttribute="leading" secondItem="HvS-hd-VgA" secondAttribute="leading" constant="10" id="ZWr-IO-wHp"/>
+                        <constraint firstAttribute="trailing" secondItem="Nkv-qu-gVM" secondAttribute="trailing" constant="10" id="bpC-3X-8fC"/>
+                        <constraint firstItem="XyM-MS-Bwd" firstAttribute="top" secondItem="ux8-zS-Ifg" secondAttribute="bottom" constant="20" id="jFk-XS-HOD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HvS-hd-VgA" secondAttribute="trailing" constant="15" id="S7Z-JC-rYm"/>
+                <constraint firstItem="HvS-hd-VgA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="e8f-Pk-dau"/>
+                <constraint firstItem="HvS-hd-VgA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="19" id="oUo-gJ-o0p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

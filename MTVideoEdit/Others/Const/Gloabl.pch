@@ -1,0 +1,69 @@
+//
+//  Gloabl.pch
+//  QzoneUp
+//
+//  Created by melon on 2017/12/22.
+//  Copyright © 2017年 melon. All rights reserved.
+//
+
+#ifndef Gloabl_pch
+#define Gloabl_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
+#import "AppDelegate.h"
+#import "LewPopupViewController.h"
+#import "Config.h"
+#import "Const.h"
+#import "YLUIKit.h"
+#import "YLHUDManager.h"
+#import "NSString+GX.h"
+#import "UIColor+GX.h"
+#import "UserModel.h"
+#import "QOnlineConfigTool.h"
+#import "UIView+Frame.h"
+#import "NetWorkTool.h"
+#import "UIBarButtonItem+Button.h"
+#define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#import <CYLTabBarController/CYLTabBarController.h>
+#import <UMSocialCore/UMSocialCore.h>
+
+
+#import "MHHUD.h"
+#import "YLMacroDefine.h"
+#import "YLCustomLayout.h"
+#import "NSDate+YLUtilities.h"
+#import "KKColor.h"
+#import <WRNavigationBar.h>
+#import <Masonry.h>
+#import "YLUI.h"
+#import "MTVideoOperateTypeHelper.h"
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <Photos/Photos.h>
+#endif
+
+
+#define kWeakSelf          __weak typeof(self) weakSelf = self;
+#define KSCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define KSCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#ifdef DEBUG
+
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+#else
+
+#define DLog(...)
+
+#endif
+
+
+#endif /* Gloabl_pch */
+
